@@ -21,6 +21,7 @@ from src.agents.news_sentiment import news_sentiment_agent
 from src.agents.growth_agent import growth_analyst_agent
 from src.agents.wang_duan_niao import wang_duan_niao_agent
 from src.agents.arthur_hayes import arthur_hayes_agent
+from src.agents.elon_musk import elon_musk_agent
 
 # Define analyst configuration - single source of truth
 ANALYST_CONFIG = {
@@ -183,6 +184,14 @@ ANALYST_CONFIG = {
         "agent_func": arthur_hayes_agent,
         "type": "analyst",
         "order": 18,
+    },
+    "elon_musk": {
+        "display_name": "Elon Musk",
+        "description": "The Technoking",
+        "investing_style": "Evaluates companies through first-principles thinking and technological disruption. Focuses on S-curve adoption, manufacturing scale, AI integration, and civilizational-scale impact over short-term financials.",
+        "agent_func": elon_musk_agent,
+        "type": "analyst",
+        "order": 19,
     },
 }
 
