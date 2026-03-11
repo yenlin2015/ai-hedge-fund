@@ -20,6 +20,7 @@ from src.agents.mohnish_pabrai import mohnish_pabrai_agent
 from src.agents.news_sentiment import news_sentiment_agent
 from src.agents.growth_agent import growth_analyst_agent
 from src.agents.wang_duan_niao import wang_duan_niao_agent
+from src.agents.arthur_hayes import arthur_hayes_agent
 
 # Define analyst configuration - single source of truth
 ANALYST_CONFIG = {
@@ -174,6 +175,14 @@ ANALYST_CONFIG = {
         "agent_func": wang_duan_niao_agent,
         "type": "analyst",
         "order": 17,
+    },
+    "arthur_hayes": {
+        "display_name": "Arthur Hayes",
+        "description": "The Macro-Liquidity Crypto Trader",
+        "investing_style": "Analyzes crypto through global macro and central bank liquidity cycles. Crypto is a liquidity sponge — when the money printer goes brrr, crypto pumps.",
+        "agent_func": arthur_hayes_agent,
+        "type": "analyst",
+        "order": 18,
     },
 }
 
