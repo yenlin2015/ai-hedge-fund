@@ -19,6 +19,7 @@ from src.agents.rakesh_jhunjhunwala import rakesh_jhunjhunwala_agent
 from src.agents.mohnish_pabrai import mohnish_pabrai_agent
 from src.agents.news_sentiment import news_sentiment_agent
 from src.agents.growth_agent import growth_analyst_agent
+from src.agents.wang_duan_niao import wang_duan_niao_agent
 
 # Define analyst configuration - single source of truth
 ANALYST_CONFIG = {
@@ -165,6 +166,14 @@ ANALYST_CONFIG = {
         "agent_func": valuation_analyst_agent,
         "type": "analyst",
         "order": 16,
+    },
+    "wang_duan_niao": {
+        "display_name": "王短鳥",
+        "description": "The Meme Narrative Hunter",
+        "investing_style": "Catches early meme coin narratives from Crypto Twitter, making high-conviction fast trades based on social sentiment and narrative momentum.",
+        "agent_func": wang_duan_niao_agent,
+        "type": "analyst",
+        "order": 17,
     },
 }
 
