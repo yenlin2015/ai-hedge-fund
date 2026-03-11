@@ -52,6 +52,9 @@ Thumbs.db
 # Frontend
 node_modules
 
+# Tweet cache (runtime data from Apify)
+src/data/tweets/*.json
+
 # Outputs
 outputs/
 
